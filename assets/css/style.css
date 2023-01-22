@@ -1,0 +1,288 @@
+/***** GENERALITIES *****/
+
+:root{
+	font-size: 62.5%;
+	--body-ff: "Black Ops One";
+	--Titles-ff: "Turret Road";
+	--header-bgc: linear-gradient(#f2ffe6, #fff);
+	--header-color: #336600;
+	--title1-fs: 5rem;
+	--title2-fs: 3rem;
+	--title3-fs: 2rem;
+	--body-fs: 1.8rem;
+	--body-color: #f2ffe6;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+    font-size: var(--body-fs);
+    font-family: var(--body-ff);
+    color: var(--body-color);
+}
+
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+main{
+	background-color: var(--header-color);
+}
+
+h2,
+h3{
+	font-family: var(--Titles-ff);
+	text-align: center;
+	font-weight: bold;
+	margin: 0 auto;
+	padding: 2rem;
+}
+h2{
+	font-size: var(--title2-fs);
+}
+h3{
+	font-size: var(--title3-fs);
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+
+.active{
+	background-color: var(--header-color);
+	color: var(--body-color);
+	border: 1px solid var(--body-color);
+}
+
+li{
+	list-style: none;
+}
+
+
+.red{
+	color: darkorange;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/***** INDEX *****/
+
+/***** BODY *****/
+
+/*** HEADER ***/
+
+header{
+	background: var(--header-bgc);
+	color: var(--header-color);
+	border-top: 1px solid var(--header-color);
+	border-bottom: 1px solid var(--header-color);
+	text-align: center;
+	padding: 1rem;
+}
+
+h1{
+	color: var(--header-color);
+	font-family: var(--Titles-ff);
+	font-size: var(--title1-fs);
+	padding: 1rem;
+}
+.blocLogo{
+	display: flex;
+	justify-content: center;
+}
+.blocLogo img{
+	max-height: 8rem;
+	max-width: 8rem;
+}
+header nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+header a{
+	text-decoration: none;
+	color: var(--header-color);
+	border: 1px solid transparent;
+	padding: 1rem 2rem;
+	transition: all .5s;
+}
+
+header a:hover{
+	background-color: var(--header-color);
+	color: var(--body-color);
+	border: 1px solid var(--body-color);
+}
+
+/*** MAIN ***/
+/** FIRST SECTION **/
+
+.spaceStation{
+	background-image: url(https://cdn.discordapp.com/attachments/1057063003448680528/1058350960507883550/LanarOne_space_battle_green_and_yellow_planet_in_the_background_8cabc0f1-93e6-4b17-8a40-b1b7d443a340.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-color: var(--header-color);
+	display: flex;
+	padding-bottom: 2rem;
+}
+
+.article{
+	width: 50%;
+}
+.window{
+	width: 50%;
+}
+
+.stars{
+	display: flex;
+	justify-content: center;
+	font-size: 5rem;
+	padding-top: 4rem;
+}
+.blocText p{
+	padding: 1rem;
+}
+
+
+.blocText a{
+	text-decoration: none;
+	color: var(--body-color);
+}
+
+.blocText a:hover{
+    border-bottom: 1px solid var(--body-color);
+}
+
+.submarineStation{
+	background-image: url(https://cdn.discordapp.com/attachments/1057063003448680528/1058740823564497026/LanarOne_submarine_station_deep_in_the_ocean_48858468-3310-47d9-aaf8-eb05ff9e4da7.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 50%;
+	background-color: var(--header-color);
+	display: flex;
+	padding-bottom: 2rem;
+}
+
+/** SECOND SECTION **/
+
+.blocArticle{
+	display: flex;
+	justify-content: center;
+}
+
+.blocArticle article:nth-child(4){
+	border-right: 1px solid var(--body-color);
+}
+
+.classics article,
+.news article{
+	max-width: 20%;
+	border-left: 1px solid var(--body-color);
+	padding: 2rem;
+}
+
+/***** ABOUT *****/
+
+/*** HISTORY SECTION ***/
+
+.history{
+	margin: 0 auto;
+}
+.history img:hover{
+	transform: scale(1.5);
+}
+.history h2{
+	font-size: var(--title1-fs);
+}
+.blocHistory{
+	display: flex;
+	justify-content: space-around;
+	padding: 3rem;
+}
+
+.blocHistory img{
+	margin: 0;
+	width: 100%;
+	display: inline;
+	padding: 0;
+	transition: all .5s;
+}
+
+.artHistory{
+	width: 40%;
+	border: 1px solid var(--body-color);
+	padding: 1rem;
+}
+
+/*** FAMILY SECTION ***/
+.family{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.family h2{
+    width: 100%;
+	font-size: var(--title1-fs);
+}
+.family img{
+	width: 100%;
+}
+.blocImg{
+	width: 40%;
+}
+.familyMember:hover{
+	transform: scale(2);
+	z-index: 1;
+}
+.familyMember:hover .familyMemberText{
+	display: block;
+	font-size: 1.2rem;
+}
+
+.familyMember{
+	display: flex;
+	position: relative;
+	padding: 1rem;
+	border: 1px solid var(--body-color);
+	width: 20%;
+	margin: 0 auto;
+	transition: all .5s;
+}
+
+.familyMemberText{
+	display: none;
+	position: absolute;
+	transition: all .5s;
+	padding: .5rem;
+}
+
+/*** FOOTER ***/
+footer img{
+	max-width: 15rem;
+}
+footer{
+	background-color: var(--header-color);
+}
+footer .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem;
+}
+footer a{
+	color: var(--body-color);
+	text-decoration: none;
+}
+footer li a:hover{
+	border-bottom: 1px solid var(--body-color);
+}
+footer li{
+	padding: 1.5rem;
+	text-align: right;
+}
+
